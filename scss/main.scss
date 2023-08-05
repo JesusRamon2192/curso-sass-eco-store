@@ -89,7 +89,7 @@ article {
 section {
     width: auto;
     height: auto;
-    padding: 60px;
+    padding: 0px 60px;
 
     h2 {
         color: $primary-text-color;
@@ -97,7 +97,7 @@ section {
     }
 
     .healthcare {
-        padding-bottom: 60px;
+        padding-bottom: 40px;
         h2 {
             font-weight: 300;
             padding-bottom: 40px;
@@ -107,9 +107,8 @@ section {
             height: auto;
             @include flexCenter(row, space-between, center);
             flex-wrap: wrap;
-            column-gap: 60px;
+            column-gap: 100px;
             row-gap: 80px;
-            
         }
         .product-card {
             width: 205px;
@@ -150,6 +149,34 @@ section {
         .product-card {
             background-color: $tertiary-color;
             color: white;
+        }
+    }
+}
+
+.about-us {
+    padding-bottom: 40px;
+    h2 {
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+    .mision-section {
+        @include flexCenter(row, space-evenly, center);
+        .earth {
+            display: flex;
+            gap: 40px;
+            width: 325px;
+            color: #E86424;
+            img {
+                object-fit: contain;
+            }
+            p {
+                font-size: 1.6em;
+                text-align: center;
+            }
+        }
+
+        .innovation {
+            @extend .earth;
         }
     }
 }

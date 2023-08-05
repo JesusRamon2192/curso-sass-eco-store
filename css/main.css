@@ -82,14 +82,14 @@ article img {
 section {
   width: auto;
   height: auto;
-  padding: 60px;
+  padding: 0px 60px;
 }
 section h2 {
   color: #7C6A0A;
   font-size: 2.2em;
 }
 section .healthcare, section .furniture {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 section .healthcare h2, section .furniture h2 {
   font-weight: 300;
@@ -103,8 +103,8 @@ section .healthcare .card-section, section .furniture .card-section {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   row-gap: 80px;
 }
 section .healthcare .product-card, section .furniture .product-card {
@@ -144,6 +144,33 @@ section .furniture .product-card {
   color: white;
 }
 
+.about-us {
+  padding-bottom: 40px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.about-us .mision-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mision-section .earth, .about-us .mision-section .innovation {
+  display: flex;
+  gap: 40px;
+  width: 325px;
+  color: #E86424;
+}
+.about-us .mision-section .earth img, .about-us .mision-section .innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-us .mision-section .earth p, .about-us .mision-section .innovation p {
+  font-size: 1.6em;
+  text-align: center;
+}
 footer {
   background-color: #FA9500;
   width: 100%;
