@@ -74,6 +74,9 @@ article button {
   justify-content: center;
   align-items: center;
 }
+article button:hover {
+  transform: scale(1.1);
+}
 article img {
   width: 25vw;
   border-radius: 19px;
@@ -171,6 +174,29 @@ section .furniture .product-card {
   font-size: 1.6em;
   text-align: center;
 }
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;
@@ -235,5 +261,16 @@ footer {
   }
   section {
     padding: 0;
+  }
+  .mision-section {
+    flex-wrap: wrap;
+  }
+  .gallery .gallery-images {
+    width: auto;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .gallery .gallery-images img {
+    width: 250px;
   }
 }/*# sourceMappingURL=main.css.map */

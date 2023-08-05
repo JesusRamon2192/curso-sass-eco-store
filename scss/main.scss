@@ -79,6 +79,9 @@ article {
         display: flex;
         justify-content: center;
         align-items: center;    
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     img {
         width: 25vw;
@@ -181,6 +184,26 @@ section {
     }
 }
 
+.gallery {
+    h2 {
+        font-weight: bold;
+        padding-bottom: 40px
+    }
+    .gallery-images {
+        @include flexCenter(row, space-between, center);
+        img {
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            object-position: 5px 35%;
+            border-radius: 16px;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }            
+}
+
 footer {
     background-color: $quatern-color;
     width: 100%;
@@ -245,5 +268,19 @@ footer {
     }
     section {
         padding:0;
+    }
+    .mision-section {
+        flex-wrap: wrap;
+    }
+    .gallery {
+        .gallery-images {
+            width: auto;
+            flex-direction: column;
+            row-gap: 15px;
+            img {
+                width: 250px;
+            }
+        }
+
     }
 }
