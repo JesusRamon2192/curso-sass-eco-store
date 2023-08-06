@@ -211,6 +211,9 @@ section .furniture .product-card {
   align-items: center;
   padding-bottom: 30px;
 }
+.location .map img {
+  width: 750px;
+}
 .location h3 {
   font-size: 2.5em;
 }
